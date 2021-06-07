@@ -30,8 +30,8 @@ class parallelization(object):
         xpos, xposMax, fitness, counter, fitnessMax = 0, 0, 0, 0, 0
 
         done = False
-        renderGame = True
-        showDisplay = False
+        renderGame = False # we do not render the game but hsow it through open cv.
+        showDisplay = True
         if showDisplay:
             cv2.namedWindow("sonicAI", cv2.WINDOW_NORMAL)
         while not done:
